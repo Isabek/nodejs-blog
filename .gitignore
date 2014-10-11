@@ -1,0 +1,4 @@
+.idea
+node_modules
+application/config/config.json
+application/config/db-config.json

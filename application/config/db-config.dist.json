@@ -1,0 +1,10 @@
+{
+    "uri": "mongodb://localhost/blog",
+    "options": {
+        "server": {
+            "socketOptions": {
+                "keepAlive": 1
+            }
+        }
+    }
+}

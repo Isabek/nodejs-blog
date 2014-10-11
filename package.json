@@ -1,0 +1,19 @@
+{
+    "name": "blog",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "env-config-loader": "git+https://bitbucket.org/tsyganov/env-config-loader.git",
+        "express": "4.x",
+        "express-router": "git+https://bitbucket.org/tsyganov/express-router.git",
+        "body-parser": "^1.9.0",
+        "mongodb": "latest",
+        "swig": "latest",
+        "underscore": "latest",
+        "when": "latest",
+        "wire": "latest"
+    },
+    "scripts": {
+        "start": "node app.js"
+    }
+}
