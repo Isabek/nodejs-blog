@@ -1,4 +1,8 @@
 .idea
 node_modules
+bower_components
 application/config/config.json
 application/config/db-config.json
+application/public/css
+application/public/js
+application/public/fonts

@@ -4,5 +4,11 @@ module.exports = {
         path: '/',
         controller: 'post-controller',
         method: 'index'
+    },
+    'post_add': {
+        httpMethod: 'all',
+        path: '/post/add',
+        controller: 'post-controller',
+        method: 'add'
     }
 };

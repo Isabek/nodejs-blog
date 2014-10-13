@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-Blog
-</body>
-</html>
+{% extends '../layout.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-6 col-md-8">
+        <div class="thumbnail">
+            <img src="image/1.jpg" alt="...">
+
+            <div class="caption">
+                <p>
+                    <a href="#" class="btn btn-lg btn-primary" role="button">Button</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-4 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div class="panel panel-default">
+            <div class="panel-heading">Search</div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

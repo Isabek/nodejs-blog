@@ -63,6 +63,16 @@ module.exports = {
     'config': load("./config/config.json"),
 
     // CONTROLLERS
+    "base-controller": {
+        create: {
+            module: require('./controllers/base')
+        },
+        init: {
+            setRouter: [
+                {$ref: 'router'}
+            ]
+        }
+    },
     "post-controller": {
         create: {
             module: require('./controllers/post')

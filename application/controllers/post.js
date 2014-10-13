@@ -8,8 +8,8 @@ var PostController = function () {
 
 util.inherits(PostController, BaseController);
 
-PostController.prototype.setPlaceActions = function (placeActions) {
-    this._placeActions = placeActions;
+PostController.prototype.setPlaceActions = function (postActions) {
+    this._postActions = postActions;
 };
 
 PostController.prototype.index = function (request, response, next) {
@@ -18,10 +18,17 @@ PostController.prototype.index = function (request, response, next) {
     });
 };
 
-PostController.prototype.show = function (request, response, next) {
+PostController.prototype.add = function (request, response, next) {
+    if (request.method === "POST") {
+        this._postActions.addPost(request.body).then(function (post) {
+        });
+    }
+
+    response.render("post/add.html", {
+    });
 };
 
-PostController.prototype.new = function (request, response, next) {
+PostController.prototype.show = function (request, response, next) {
 };
 
 module.exports = PostController;
